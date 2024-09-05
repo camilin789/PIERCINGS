@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="nav-bar">
+<!-- Menú de Navegación -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+            <li><a href="personaliza.html" class="nav-link">Personaliza</a></li>
+            <li><a href="blog.html" class="nav-link">Blog</a></li>
+            <li><a href="reservas.html" class="nav-link">Reservas</a></li>
+            <li><a href="acerca.html" class="nav-link">Acerca</a></li>
+            <li><a href="testimonios.html" class="nav-link">Testimonios</a></li>
+            <li><a href="promociones.html" class="nav-link">Promociones</a></li>
+            <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            <li><a href="mi-cuenta.html" class="nav-link">Mi Cuenta</a></li>
+            <li><a href="carrito.html" class="nav-link">Carrito</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">Catálogo de Productos</h1>
+            <p class="hero-description">Explora nuestra colección de piercings únicos y encuentra el accesorio perfecto para ti. Desde aros elegantes hasta diseños personalizados, tenemos algo para cada estilo.</p>
+            <img src="assets/images/cata.jpg" alt="Piercings" class="hero-img">
+        </section>
+
+        <section class="filtros">
+            <h2>Filtros de Búsqueda</h2>
+            <form class="filtros-form">
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="todos">Todos</option>
+                    <option value="aros">Aros</option>
+                    <option value="labrets">Labrets</option>
+                    <option value="septum">Septum</option>
+                </select>
+                
+                <label for="precio">Rango de Precio:</label>
+                <input type="range" id="precio" name="precio" min="0" max="100" step="1" value="50">
+                <span id="precio-valor">$50</span>
+                
+                <button type="submit" class="btn-filtrar">Aplicar Filtros</button>
+            </form>
+        </section>
+
+        <section class="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="producto">
+                <img src="assets/images/piercing1.jpg" alt="Piercing Estrella" class="producto-img">
+                <h3 class="producto-nombre">Piercing Estrella</h3>
+                <p class="producto-descripcion">Un piercing en forma de estrella con detalles dorados, ideal para añadir un toque elegante a tu look. Hecho con materiales de alta calidad para garantizar durabilidad y estilo.</p>
+                <p class="producto-precio">$20.00</p>
+                <a href="producto-detalle1.html" class="btn-detalle">Ver Detalle</a>
+            </div>
+
+            <div class="producto">
+                <img src="assets/images/piercing2.jpg" alt="Piercing Luna" class="producto-img">
+                <h3 class="producto-nombre">Piercing Luna</h3>
+                <p class="producto-descripcion">Un elegante piercing con forma de luna creciente, perfecto para un estilo sofisticado. Disponible en plata y oro rosa, con un acabado brillante.</p>
+                <p class="producto-precio">$25.00</p>
+                <a href="producto-detalle2.html" class="btn-detalle">Ver Detalle</a>
+            </div>
+
+            <div class="producto">
+                <img src="assets/images/piercing3.jpg" alt="Piercing Ancla" class="producto-img">
+                <h3 class="producto-nombre">Piercing Ancla</h3>
+                <p class="producto-descripcion">Un piercing en forma de ancla con acabado en plata, ideal para un look audaz y moderno. Su diseño robusto asegura un ajuste cómodo y seguro.</p>
+                <p class="producto-precio">$18.00</p>
+                <a href="producto-detalle3.html" class="btn-detalle">Ver Detalle</a>
+            </div>
+
+            <!-- Agregar más productos según sea necesario -->
+        </section>
+
+        <section class="videos">
+            <h2>Videos y Tutoriales</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DGepUO_Ackw?si=FO_gH4M08Yh3hNuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="video-descripcion">Descubre cómo elegir el piercing perfecto para ti y aprende sobre los cuidados necesarios para mantenerlo en óptimas condiciones.</p>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/g9utWNQMvd8?si=utw0fshmC3bHIOwj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="video-descripcion">Explora las últimas tendencias en piercings y conoce los estilos más populares del momento.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tienda de Piercings. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
